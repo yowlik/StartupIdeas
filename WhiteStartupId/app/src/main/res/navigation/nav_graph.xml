@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstScreen">
+
+    <fragment
+        android:id="@+id/firstScreen"
+        android:name="com.antrazzitstssss.whitestartupid.FirstScreen"
+        android:label="fragment_first_screen"
+        tools:layout="@layout/fragment_first_screen" >
+        <action
+            android:id="@+id/action_firstScreen_to_screenMenu"
+            app:destination="@id/screenMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenMenu"
+        android:name="com.antrazzitstssss.whitestartupid.ScreenMenu"
+        android:label="fragment_screen_menu"
+        tools:layout="@layout/fragment_screen_menu" >
+        <action
+            android:id="@+id/action_screenMenu_to_screenDetails"
+            app:destination="@id/screenDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenDetails"
+        android:name="com.antrazzitstssss.whitestartupid.ScreenDetails"
+        android:label="fragment_screen_details"
+        tools:layout="@layout/fragment_screen_details" >
+        <action
+            android:id="@+id/action_screenDetails_to_screenMenu"
+            app:destination="@id/screenMenu" />
+    </fragment>
+</navigation>

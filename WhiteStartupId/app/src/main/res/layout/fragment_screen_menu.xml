@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".ScreenMenu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбери категорию"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:fontFamily="@font/ideas"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="340dp"
+        android:gravity="center"
+        android:background="@drawable/whieplash"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:text="Общепит\nВложения\n100000\nДоходность\n300000"
+            android:textColor="@color/black"
+            android:id="@+id/text1"
+            android:textStyle="italic"
+            android:fontFamily="@font/ideas"
+            android:textSize="20sp"
+            android:gravity="left|center"
+            android:layout_height="145dp"/>
+        <View
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:id="@+id/view1"
+            android:background="@drawable/obshepit"/>
+
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="340dp"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:background="@drawable/whieplash"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:text="Ремонт\nВложения\n150000\nДоходность\n500000"
+            android:textColor="@color/black"
+            android:id="@+id/text2"
+            android:textStyle="italic"
+            android:fontFamily="@font/ideas"
+            android:textSize="20sp"
+            android:gravity="left|center"
+            android:layout_height="145dp"/>
+        <View
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:id="@+id/view2"
+            android:background="@drawable/remont"/>
+
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="340dp"
+        android:gravity="center"
+        android:background="@drawable/whieplash"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:text="Дизайн\nВложения\n50000\nДоходность\n250000"
+            android:textColor="@color/black"
+            android:id="@+id/text3"
+            android:textStyle="italic"
+            android:fontFamily="@font/ideas"
+            android:textSize="20sp"
+            android:gravity="left|center"
+            android:layout_height="145dp"/>
+        <View
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:id="@+id/view3"
+            android:background="@drawable/design"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
