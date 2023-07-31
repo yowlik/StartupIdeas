@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/back"
+    android:layout_height="match_parent"
+    android:background="@drawable/cafe"
+    tools:context=".FragmentDetails">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:orientation="vertical"
+        android:background="@drawable/button_tint3">
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="100dp"
+            android:alpha="1"
+            android:id="@+id/tagstart"
+            android:background="@drawable/green_but"
+            android:text="Кафе"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/startup"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Кейтеринговое агенство "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="23.10.2023"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/time"
+                android:layout_marginStart="50dp"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="09:00"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/aboutstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/fonts"
+            android:gravity=""
+            android:text="Для открытия кейтерингового агентства нужно провести исследование рынка, разработать уникальное меню, получить необходимые лицензии и разрешения. Затем, создать привлекательный бренд, наладить работу с поставщиками, арендовать подходящее оборудование и привлечь талантливых поваров и персонал. Важно продвигать свои услуги через маркетинг и социальные сети, а также уделять внимание высокому качеству обслуживания и удовлетворению потребностей клиентов."
+            android:textColor="@color/white"
+            android:textSize="19sp"/>
+        
+    </LinearLayout>
+        
+
+  
+
+</FrameLayout>

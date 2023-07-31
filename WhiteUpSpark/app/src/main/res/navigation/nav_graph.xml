@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentMenu">
+
+    <fragment
+        android:id="@+id/fragmentMenu"
+        android:name="com.lsot.fthesolarsystem.whiteupspark.FragmentMenu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_fragmentMenu_to_fragmentStartup"
+            app:destination="@id/fragmentStartup" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentStartup"
+        android:name="com.lsot.fthesolarsystem.whiteupspark.FragmentStartup"
+        android:label="fragment_startup"
+        tools:layout="@layout/fragment_startup" >
+        <action
+            android:id="@+id/action_fragmentStartup_to_fragmentDetails"
+            app:destination="@id/fragmentDetails" />
+        <action
+            android:id="@+id/action_fragmentStartup_to_fragmentMenu"
+            app:destination="@id/fragmentMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetails"
+        android:name="com.lsot.fthesolarsystem.whiteupspark.FragmentDetails"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_fragmentDetails_to_fragmentStartup"
+            app:destination="@id/fragmentStartup" />
+    </fragment>
+</navigation>
