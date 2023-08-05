@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0D0D10"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="70dp">
+        <View
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/malefe"
+            android:background="@drawable/man"/>
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="70dp"
+            android:id="@+id/namehello"
+            android:gravity="center"
+            android:text="Михаил, у нас есть несколько интересных наблюдений для вас"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1B22"
+    tools:context=".WelcomeFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Добро пожаловать в\nInsightsIQ"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="340dp"
+        android:layout_height="270dp"
+        android:background="@drawable/gray_plash"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.511">
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:id="@+id/entername"
+            android:textColor="@color/white"
+            android:autofillHints="name"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="144dp"
+            android:hint="Введите имя" />
+        <LinearLayout
+            android:layout_width="320dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <CheckBox
+                android:layout_width="60dp"
+                android:id="@+id/mans"
+                android:layout_height="60dp"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:text="Мужской"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="320dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <CheckBox
+                android:layout_width="60dp"
+                android:id="@+id/womans"
+                android:layout_height="60dp"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:text="Женский"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:text="Продолжить"
+            android:gravity="center"
+            android:id="@+id/contins"
+            android:background="@drawable/black_plash"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="140dp"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.993" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
