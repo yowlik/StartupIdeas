@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:text="Start Game"
+        android:id="@+id/start"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:background="@drawable/button_item"/>
+
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:layout_width="320dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/closegame"
+        android:text="Close game"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:background="@drawable/button_item"/>
+
+</LinearLayout>
